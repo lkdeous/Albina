@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вопросы</title>
+</head>
+<body>
+    <h1 style="text-align: center;"><b>Questions</b></h1>
+    <h4 style="text-align: center;"><b>What is the <i>Git workflow</i>?</b></h4>
+    <p><i>Git workflow</i> - this is the principle of working with git in a team.</p>
+    <h4 style="text-align: center;"><b>What is it for?</b></h4>
+    <p>A set of commands and practices for managing code changes using the Git version control system. This is necessary to organize the development process, minimize conflicts and simplify the integration of changes.</p>
+    <h4 style="text-align: center;"><b>How does it work?</b></h4>
+    <p><i>Git workflow</i> works with using branches. Developers create separate branches for each feature or task. Then they give it to testers and programmers to check quality, presence of bugs, etc. After successfully passing the review and approval, the developers merge the new branch into the main branch.</p>
+    <h4 style="text-align: center;">What is the differense between <i>git rebase and git merge</i>?</h4>
+    <p>Merge creates a new commit that merges changes from both branches, preserving the entire history and creating a "branched" structure, while rebase moves commits from one branch to the top of another, creating a more linear history without additional merge commits. Using merge introduces an additional merge commit, while rebase makes the history cleaner and more consistent. With merge, conflicts are resolved once during the merge, but with rebase, conflicts can occur on every commit, which requires more effort to resolve. Merge is typically used to integrate changes into the master branch, and rebase is often used to prepare local changes before merging to keep the history linear.</p>
+    <p><b><i>Merge</i> saves the complete history of changes, and <i>rebase</i> makes it more accurate and understandable.</b></p>
+    <h4 style="text-align: center;">What is the differense between <i>git fetch and git pull</i>?</h4>
+    <p><i>Git fetch</i> fetches changes from a remote repository, updating local references to remote branches, but does not make changes to your current branch. This allows you to see what changes have been made in the remote repository without directly merging them into your work. You can then review these changes and decide how to integrate.<i>Git pull</i> is a combination of two commands: git fetch and git merge. When you do a git pull, it first downloads changes from a remote repository and then automatically merges them into your current branch. This is a more automated process that allows you to quickly update your local branch, but can lead to conflicts if changes on the remote branch are not compatible with your local changes.</p>
+    <p><b><i>Git fetch</i> gives you control over the update process, while <i>git pull</i> allows you to quickly integrate changes, but requires more attention to potential conflicts.</b></p>
+</body>
+</html>
